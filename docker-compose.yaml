@@ -1,0 +1,12 @@
+services:
+  db:
+    container_name: database
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: xadvisor
+      MYSQL_USER: xadvisor
+      MYSQL_PASSWORD: xadvisor2024
+    ports:
+      - "3306:3306"
